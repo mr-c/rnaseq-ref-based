@@ -1,7 +1,7 @@
 #!/usr/bin/env cwl-runner
 cwl:run: workflow.cwl
 reference_genome_gff:
-  path: dm3.gff
+  path: dm3.gtf
   class: File
 reference_genome_bowtie_index: 
   path: dm3.fa
