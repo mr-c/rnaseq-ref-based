@@ -1,0 +1,28 @@
+#!/usr/bin/env cwl-runner
+cwl:run: workflow.cwl
+reference_genome_gff:
+  path: dm3.gff
+  class: File
+reference_genome_bowtie_index: 
+  path: dm3.fa
+  class: File
+mate-inner-dist: 28
+replicates:
+ - left-read:
+     path: "Tutorials/RNA seq (RB)/Reads/c1-r1-f-x.fastq"
+     class: File
+   right-read:
+     path: "Tutorials/RNA seq (RB)/Reads/c1-r1-r-x.fastq"
+     class: File
+ - left-read:
+     path: "Tutorials/RNA seq (RB)/Reads/c1-r2-f-x.fastq"
+     class: File
+   right-read:
+     path: "Tutorials/RNA seq (RB)/Reads/c1-r2-r-x.fastq"
+     class: File
+ - left-read:
+     path: "Tutorials/RNA seq (RB)/Reads/c1-r3-f-x.fastq"
+     class: File
+   right-read:
+     path: "Tutorials/RNA seq (RB)/Reads/c1-r3-r-x.fastq"
+     class: File

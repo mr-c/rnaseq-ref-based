@@ -1,0 +1,13 @@
+class: SchemaDefRequirement
+types:
+ - name: paired-reads
+   type: record
+   fields:
+     - name: left-read
+       type: File
+       inputBinding:
+         position: 2
+     - name: right-read
+       type: File
+       inputBinding:
+         position: 3

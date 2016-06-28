@@ -1,0 +1,14 @@
+#!/usr/bin/env cwl-runner
+
+cwl:tool: tophat2.cwl
+fastq1:
+  class: File
+  path: "./Tutorials/RNA seq (RB)/Reads/c1-r1-f-x.fastq"
+fastq2:
+  class: File
+  path: "./Tutorials/RNA seq (RB)/Reads/c1-r1-r-x.fastq"
+mate-inner-dist: 28
+library-type: fr-firststrand
+bowtie_index:
+  class: File
+  path: "./dm3.fa"
