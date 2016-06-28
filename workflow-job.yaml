@@ -7,7 +7,7 @@ reference_genome_bowtie_index:
   path: dm3.fa
   class: File
 mate-inner-dist: 28
-replicates:
+replicates:  # source: https://usegalaxy.org/library/list#/folders/Ff4ce53393dae30ee/download/tbz
  - left-read:
      path: "Tutorials/RNA seq (RB)/Reads/c1-r1-f-x.fastq"
      class: File
