@@ -54,3 +54,4 @@ steps:
         source: reference_genome_gff
     out: []
     run: htseq-count.cwl
+    scatter: alignment_file
